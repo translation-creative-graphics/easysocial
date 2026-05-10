@@ -15,6 +15,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -43,20 +45,22 @@ jobs:
       - name: Generate downloads.xml
         run: |
           python3 << 'PYEOF'
-          import re
+          import re, subprocess
           from pathlib import Path
+          from datetime import datetime, timezone
 
           lang_names = {
-              "af-ZA": "Afrikaans", "ar-AA": "Arabic", "bg-BG": "Bulgarian",
-              "bs-BA": "Bosnian", "ca-ES": "Catalan", "cs-CZ": "Czech",
-              "da-DK": "Danish", "de-DE": "German", "el-GR": "Greek",
-              "en-GB": "English (UK)", "es-ES": "Spanish", "et-EE": "Estonian",
-              "fa-IR": "Persian", "fi-FI": "Finnish", "fr-FR": "French",
-              "he-IL": "Hebrew", "hr-HR": "Croatian", "hu-HU": "Hungarian",
-              "id-ID": "Indonesian", "it-IT": "Italian", "ja-JP": "Japanese",
+              "af-ZA": "Afrikaans", "ar-AA": "Arabic", "ar-SA": "Arabic",
+              "bg-BG": "Bulgarian", "bs-BA": "Bosnian", "ca-ES": "Catalan",
+              "cs-CZ": "Czech", "da-DK": "Danish", "de-DE": "German",
+              "el-GR": "Greek", "en-GB": "English (UK)", "es-ES": "Spanish",
+              "et-EE": "Estonian", "fa-IR": "Persian", "fi-FI": "Finnish",
+              "fr-FR": "French", "gl-ES": "Galician", "he-IL": "Hebrew",
+              "hr-HR": "Croatian", "hu-HU": "Hungarian", "id-ID": "Indonesian",
+              "it-IT": "Italian", "ja-JP": "Japanese", "kk-KZ": "Kazakh",
               "ko-KR": "Korean", "lt-LT": "Lithuanian", "lv-LV": "Latvian",
-              "mk-MK": "Macedonian", "ms-MY": "Malay", "nl-NL": "Dutch",
-              "nb-NO": "Norwegian", "pl-PL": "Polish", "pt-BR": "Portuguese (Brazil)",
+              "mk-MK": "Macedonian", "ms-MY": "Malay", "nb-NO": "Norwegian",
+              "nl-NL": "Dutch", "pl-PL": "Polish", "pt-BR": "Portuguese (Brazil)",
               "pt-PT": "Portuguese", "ro-RO": "Romanian", "ru-RU": "Russian",
               "sk-SK": "Slovak", "sl-SI": "Slovenian", "sq-AL": "Albanian",
               "sr-RS": "Serbian", "sv-SE": "Swedish", "th-TH": "Thai",
@@ -76,12 +80,21 @@ jobs:
               name = lang_names.get(code, code)
               size = zip_file.stat().st_size
               url = f"{base_url}/{zip_file.name}"
+
+              result = subprocess.run(
+                  ["git", "log", "-1", "--format=%cI", "--",
+                   f"language/{code}/", f"administrator/language/{code}/"],
+                  capture_output=True, text=True
+              )
+              updated = result.stdout.strip() or datetime.now(timezone.utc).isoformat()
+
               lines += [
                   "  <language>",
                   f"    <code>{code}</code>",
                   f"    <name>{name}</name>",
                   f"    <url>{url}</url>",
                   f"    <size>{size}</size>",
+                  f"    <updated>{updated}</updated>",
                   "  </language>",
               ]
 
