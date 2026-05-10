@@ -39,3 +39,62 @@ jobs:
             dist/*.zip
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate downloads.xml
+        run: |
+          python3 << 'PYEOF'
+          import re
+          from pathlib import Path
+
+          lang_names = {
+              "af-ZA": "Afrikaans", "ar-AA": "Arabic", "bg-BG": "Bulgarian",
+              "bs-BA": "Bosnian", "ca-ES": "Catalan", "cs-CZ": "Czech",
+              "da-DK": "Danish", "de-DE": "German", "el-GR": "Greek",
+              "en-GB": "English (UK)", "es-ES": "Spanish", "et-EE": "Estonian",
+              "fa-IR": "Persian", "fi-FI": "Finnish", "fr-FR": "French",
+              "he-IL": "Hebrew", "hr-HR": "Croatian", "hu-HU": "Hungarian",
+              "id-ID": "Indonesian", "it-IT": "Italian", "ja-JP": "Japanese",
+              "ko-KR": "Korean", "lt-LT": "Lithuanian", "lv-LV": "Latvian",
+              "mk-MK": "Macedonian", "ms-MY": "Malay", "nl-NL": "Dutch",
+              "nb-NO": "Norwegian", "pl-PL": "Polish", "pt-BR": "Portuguese (Brazil)",
+              "pt-PT": "Portuguese", "ro-RO": "Romanian", "ru-RU": "Russian",
+              "sk-SK": "Slovak", "sl-SI": "Slovenian", "sq-AL": "Albanian",
+              "sr-RS": "Serbian", "sv-SE": "Swedish", "th-TH": "Thai",
+              "tr-TR": "Turkish", "uk-UA": "Ukrainian", "vi-VN": "Vietnamese",
+              "zh-CN": "Chinese (Simplified)", "zh-TW": "Chinese (Traditional)",
+          }
+
+          base_url = "https://github.com/translation-creative-graphics/easysocial/releases/download/latest"
+
+          lines = ['<?xml version="1.0" encoding="UTF-8"?>', "<languages>"]
+
+          for zip_file in sorted(Path("dist").glob("com_easysocial_*.zip")):
+              match = re.search(r"com_easysocial_([a-z]{2}-[A-Z]{2})\.zip", zip_file.name)
+              if not match:
+                  continue
+              code = match.group(1)
+              name = lang_names.get(code, code)
+              size = zip_file.stat().st_size
+              url = f"{base_url}/{zip_file.name}"
+              lines += [
+                  "  <language>",
+                  f"    <code>{code}</code>",
+                  f"    <name>{name}</name>",
+                  f"    <url>{url}</url>",
+                  f"    <size>{size}</size>",
+                  "  </language>",
+              ]
+
+          lines.append("</languages>")
+          count = lines.count("  <language>")
+          Path("downloads.xml").write_text("\n".join(lines) + "\n", encoding="utf-8")
+          print(f"Generated downloads.xml with {count} languages")
+          PYEOF
+
+      - name: Commit downloads.xml
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add downloads.xml
+          git diff --staged --quiet || git commit -m "chore: update downloads.xml [skip ci]"
+          git push
