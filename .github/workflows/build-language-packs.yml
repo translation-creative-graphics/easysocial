@@ -86,7 +86,11 @@ jobs:
                    f"language/{code}/", f"administrator/language/{code}/"],
                   capture_output=True, text=True
               )
-              updated = result.stdout.strip() or datetime.now(timezone.utc).isoformat()
+              raw = result.stdout.strip()
+              if raw:
+                  updated = datetime.fromisoformat(raw).astimezone(timezone.utc).strftime('%Y-%m-%d %H:%M:%S')
+              else:
+                  updated = datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M:%S')
 
               lines += [
                   "  <language>",
