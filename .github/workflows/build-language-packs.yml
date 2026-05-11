@@ -79,7 +79,7 @@ jobs:
               code = match.group(1)
               name = lang_names.get(code, code)
               size = zip_file.stat().st_size
-              url = f"{base_url}/{zip_file.name}"
+              download = f"{base_url}/{zip_file.name}"
 
               result = subprocess.run(
                   ["git", "log", "-1", "--format=%cI", "--",
@@ -96,7 +96,7 @@ jobs:
                   "  <language>",
                   f"    <code>{code}</code>",
                   f"    <name>{name}</name>",
-                  f"    <url>{url}</url>",
+                  f"    <download>{download}</download>",
                   f"    <size>{size}</size>",
                   f"    <updated>{updated}</updated>",
                   "  </language>",
