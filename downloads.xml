@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <languages>
   <language>
+    <code>sq-AL</code>
+    <name>Albanian</name>
+    <download>https://github.com/translation-creative-graphics/easysocial/releases/download/latest/com_easysocial_sq-AL.zip</download>
+    <size>113757</size>
+    <updated>2026-05-09 20:50:17</updated>
+  </language>
+  <language>
     <code>ar-SA</code>
     <name>Arabic</name>
     <download>https://github.com/translation-creative-graphics/easysocial/releases/download/latest/com_easysocial_ar-SA.zip</download>
@@ -22,6 +29,20 @@
     <updated>2026-05-09 20:50:17</updated>
   </language>
   <language>
+    <code>zh-CN</code>
+    <name>Chinese (Simplified)</name>
+    <download>https://github.com/translation-creative-graphics/easysocial/releases/download/latest/com_easysocial_zh-CN.zip</download>
+    <size>274240</size>
+    <updated>2026-05-09 20:50:17</updated>
+  </language>
+  <language>
+    <code>hr-HR</code>
+    <name>Croatian</name>
+    <download>https://github.com/translation-creative-graphics/easysocial/releases/download/latest/com_easysocial_hr-HR.zip</download>
+    <size>102213</size>
+    <updated>2026-05-09 20:50:17</updated>
+  </language>
+  <language>
     <code>cs-CZ</code>
     <name>Czech</name>
     <download>https://github.com/translation-creative-graphics/easysocial/releases/download/latest/com_easysocial_cs-CZ.zip</download>
@@ -36,38 +57,17 @@
     <updated>2026-05-09 20:50:17</updated>
   </language>
   <language>
-    <code>de-DE</code>
-    <name>German</name>
-    <download>https://github.com/translation-creative-graphics/easysocial/releases/download/latest/com_easysocial_de-DE.zip</download>
-    <size>322557</size>
-    <updated>2026-05-09 20:52:03</updated>
-  </language>
-  <language>
-    <code>el-GR</code>
-    <name>Greek</name>
-    <download>https://github.com/translation-creative-graphics/easysocial/releases/download/latest/com_easysocial_el-GR.zip</download>
-    <size>375463</size>
-    <updated>2026-05-09 20:50:17</updated>
-  </language>
-  <language>
-    <code>es-ES</code>
-    <name>Spanish</name>
-    <download>https://github.com/translation-creative-graphics/easysocial/releases/download/latest/com_easysocial_es-ES.zip</download>
-    <size>324477</size>
-    <updated>2026-05-09 20:50:17</updated>
+    <code>nl-NL</code>
+    <name>Dutch</name>
+    <download>https://github.com/translation-creative-graphics/easysocial/releases/download/latest/com_easysocial_nl-NL.zip</download>
+    <size>391960</size>
+    <updated>2026-05-10 22:19:40</updated>
   </language>
   <language>
     <code>et-EE</code>
     <name>Estonian</name>
     <download>https://github.com/translation-creative-graphics/easysocial/releases/download/latest/com_easysocial_et-EE.zip</download>
     <size>24590</size>
-    <updated>2026-05-09 20:50:17</updated>
-  </language>
-  <language>
-    <code>fa-IR</code>
-    <name>Persian</name>
-    <download>https://github.com/translation-creative-graphics/easysocial/releases/download/latest/com_easysocial_fa-IR.zip</download>
-    <size>188757</size>
     <updated>2026-05-09 20:50:17</updated>
   </language>
   <language>
@@ -85,17 +85,24 @@
     <updated>2026-05-09 20:50:17</updated>
   </language>
   <language>
+    <code>de-DE</code>
+    <name>German</name>
+    <download>https://github.com/translation-creative-graphics/easysocial/releases/download/latest/com_easysocial_de-DE.zip</download>
+    <size>322557</size>
+    <updated>2026-05-09 20:52:03</updated>
+  </language>
+  <language>
+    <code>el-GR</code>
+    <name>Greek</name>
+    <download>https://github.com/translation-creative-graphics/easysocial/releases/download/latest/com_easysocial_el-GR.zip</download>
+    <size>375463</size>
+    <updated>2026-05-09 20:50:17</updated>
+  </language>
+  <language>
     <code>he-IL</code>
     <name>Hebrew</name>
     <download>https://github.com/translation-creative-graphics/easysocial/releases/download/latest/com_easysocial_he-IL.zip</download>
     <size>20998</size>
-    <updated>2026-05-09 20:50:17</updated>
-  </language>
-  <language>
-    <code>hr-HR</code>
-    <name>Croatian</name>
-    <download>https://github.com/translation-creative-graphics/easysocial/releases/download/latest/com_easysocial_hr-HR.zip</download>
-    <size>102213</size>
     <updated>2026-05-09 20:50:17</updated>
   </language>
   <language>
@@ -134,11 +141,11 @@
     <updated>2026-05-09 20:50:17</updated>
   </language>
   <language>
-    <code>nl-NL</code>
-    <name>Dutch</name>
-    <download>https://github.com/translation-creative-graphics/easysocial/releases/download/latest/com_easysocial_nl-NL.zip</download>
-    <size>391960</size>
-    <updated>2026-05-10 22:19:40</updated>
+    <code>fa-IR</code>
+    <name>Persian</name>
+    <download>https://github.com/translation-creative-graphics/easysocial/releases/download/latest/com_easysocial_fa-IR.zip</download>
+    <size>188757</size>
+    <updated>2026-05-09 20:50:17</updated>
   </language>
   <language>
     <code>pl-PL</code>
@@ -148,17 +155,17 @@
     <updated>2026-05-09 20:50:17</updated>
   </language>
   <language>
-    <code>pt-BR</code>
-    <name>Portuguese (Brazil)</name>
-    <download>https://github.com/translation-creative-graphics/easysocial/releases/download/latest/com_easysocial_pt-BR.zip</download>
-    <size>198401</size>
-    <updated>2026-05-09 20:50:17</updated>
-  </language>
-  <language>
     <code>pt-PT</code>
     <name>Portuguese</name>
     <download>https://github.com/translation-creative-graphics/easysocial/releases/download/latest/com_easysocial_pt-PT.zip</download>
     <size>231404</size>
+    <updated>2026-05-09 20:50:17</updated>
+  </language>
+  <language>
+    <code>pt-BR</code>
+    <name>Portuguese (Brazil)</name>
+    <download>https://github.com/translation-creative-graphics/easysocial/releases/download/latest/com_easysocial_pt-BR.zip</download>
+    <size>198401</size>
     <updated>2026-05-09 20:50:17</updated>
   </language>
   <language>
@@ -190,10 +197,10 @@
     <updated>2026-05-09 20:50:17</updated>
   </language>
   <language>
-    <code>sq-AL</code>
-    <name>Albanian</name>
-    <download>https://github.com/translation-creative-graphics/easysocial/releases/download/latest/com_easysocial_sq-AL.zip</download>
-    <size>113757</size>
+    <code>es-ES</code>
+    <name>Spanish</name>
+    <download>https://github.com/translation-creative-graphics/easysocial/releases/download/latest/com_easysocial_es-ES.zip</download>
+    <size>324477</size>
     <updated>2026-05-09 20:50:17</updated>
   </language>
   <language>
@@ -222,13 +229,6 @@
     <name>Vietnamese</name>
     <download>https://github.com/translation-creative-graphics/easysocial/releases/download/latest/com_easysocial_vi-VN.zip</download>
     <size>198887</size>
-    <updated>2026-05-09 20:50:17</updated>
-  </language>
-  <language>
-    <code>zh-CN</code>
-    <name>Chinese (Simplified)</name>
-    <download>https://github.com/translation-creative-graphics/easysocial/releases/download/latest/com_easysocial_zh-CN.zip</download>
-    <size>274240</size>
     <updated>2026-05-09 20:50:17</updated>
   </language>
 </languages>
