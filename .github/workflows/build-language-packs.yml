@@ -70,9 +70,8 @@ jobs:
 
           base_url = "https://github.com/translation-creative-graphics/easysocial/releases/download/latest"
 
-          lines = ['<?xml version="1.0" encoding="UTF-8"?>', "<languages>"]
-
-          for zip_file in sorted(Path("dist").glob("com_easysocial_*.zip")):
+          items = []
+          for zip_file in Path("dist").glob("com_easysocial_*.zip"):
               match = re.search(r"com_easysocial_([a-z]{2}-[A-Z]{2})\.zip", zip_file.name)
               if not match:
                   continue
@@ -92,16 +91,21 @@ jobs:
               else:
                   updated = datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M:%S')
 
+              items.append({"code": code, "name": name, "download": download, "size": size, "updated": updated})
+
+          items.sort(key=lambda x: x["name"].lower())
+
+          lines = ['<?xml version="1.0" encoding="UTF-8"?>', "<languages>"]
+          for item in items:
               lines += [
                   "  <language>",
-                  f"    <code>{code}</code>",
-                  f"    <name>{name}</name>",
-                  f"    <download>{download}</download>",
-                  f"    <size>{size}</size>",
-                  f"    <updated>{updated}</updated>",
+                  f"    <code>{item['code']}</code>",
+                  f"    <name>{item['name']}</name>",
+                  f"    <download>{item['download']}</download>",
+                  f"    <size>{item['size']}</size>",
+                  f"    <updated>{item['updated']}</updated>",
                   "  </language>",
               ]
-
           lines.append("</languages>")
           count = lines.count("  <language>")
           Path("downloads.xml").write_text("\n".join(lines) + "\n", encoding="utf-8")
