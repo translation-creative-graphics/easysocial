@@ -17,6 +17,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+      WEBLATE_TOKEN: ${{ secrets.WEBLATE_TOKEN }}
 
     steps:
       - name: Checkout
@@ -51,9 +52,40 @@ jobs:
       - name: Generate downloads.xml
         run: |
           python3 << 'PYEOF'
-          import re, subprocess
+          import re, subprocess, urllib.request, json, os
           from pathlib import Path
           from datetime import datetime, timezone
+
+          # ── Weblate language code → Joomla locale ─────────────────────────────
+          WEBLATE_TO_JOOMLA = {
+              'ar_SA': 'ar-SA', 'bg': 'bg-BG', 'ca': 'ca-ES', 'cs': 'cs-CZ',
+              'da': 'da-DK', 'de': 'de-DE', 'el': 'el-GR', 'es': 'es-ES',
+              'et': 'et-EE', 'fa': 'fa-IR', 'fr': 'fr-FR', 'gl': 'gl-ES',
+              'he_IL': 'he-IL', 'hr': 'hr-HR', 'hu': 'hu-HU', 'id': 'id-ID',
+              'it': 'it-IT', 'ja': 'ja-JP', 'kk': 'kk-KZ', 'nb_NO': 'nb-NO',
+              'nl': 'nl-NL', 'pl': 'pl-PL', 'pt_BR': 'pt-BR', 'pt_PT': 'pt-PT',
+              'ro': 'ro-RO', 'ru': 'ru-RU', 'sk': 'sk-SK', 'sl': 'sl-SI',
+              'sq': 'sq-AL', 'sv': 'sv-SE', 'tr': 'tr-TR', 'uk': 'uk-UA',
+              'vi': 'vi-VN', 'zh_Hans': 'zh-CN', 'zh_Hant': 'zh-TW',
+          }
+
+          # ── Fetch translation progress from Weblate ────────────────────────────
+          progress_map = {}
+          weblate_token = os.environ.get('WEBLATE_TOKEN', '').strip()
+          if weblate_token:
+              url = 'https://translate.creative-graphics.ch/api/projects/easysocial/languages/?format=json'
+              req = urllib.request.Request(url, headers={'Authorization': f'Token {weblate_token}'})
+              try:
+                  with urllib.request.urlopen(req, timeout=30) as r:
+                      for lang in json.loads(r.read()):
+                          joomla = WEBLATE_TO_JOOMLA.get(lang['code'])
+                          if joomla:
+                              progress_map[joomla] = round(lang['translated_percent'])
+                  print(f'Weblate stats fetched: {len(progress_map)} locales')
+              except Exception as e:
+                  print(f'Warning: could not fetch Weblate stats: {e}')
+          else:
+              print('Warning: WEBLATE_TOKEN not set — progress will be 0 for all locales')
 
           lang_names = {
               "af-ZA": "Afrikaans", "ar-AA": "Arabic", "ar-SA": "Arabic",
@@ -85,6 +117,7 @@ jobs:
               name = lang_names.get(code, code)
               size = zip_file.stat().st_size
               download = f"{base_url}/{zip_file.name}"
+              progress = progress_map.get(code, 0)
 
               result = subprocess.run(
                   ["git", "log", "-1", "--format=%cI", "--",
@@ -97,7 +130,7 @@ jobs:
               else:
                   updated = datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M:%S')
 
-              items.append({"code": code, "name": name, "download": download, "size": size, "updated": updated})
+              items.append({"code": code, "name": name, "download": download, "size": size, "updated": updated, "progress": progress})
 
           items.sort(key=lambda x: x["name"].lower())
 
@@ -110,6 +143,7 @@ jobs:
                   f"    <download>{item['download']}</download>",
                   f"    <size>{item['size']}</size>",
                   f"    <updated>{item['updated']}</updated>",
+                  f"    <progress>{item['progress']}</progress>",
                   "  </language>",
               ]
           lines.append("</languages>")
