@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<languages>
+  <language>
+    <code>sq-AL</code>
+    <name>Albanian</name>
+    <download>https://github.com/translation-creative-graphics/easysocial/releases/download/latest/com_easysocial_sq-AL.zip</download>
+    <size>113756</size>
+    <updated>2026-05-09 20:50:17</updated>
+    <progress>42</progress>
+  </language>
+  <language>
+    <code>ar-SA</code>
+    <name>Arabic</name>
+    <download>https://github.com/translation-creative-graphics/easysocial/releases/download/latest/com_easysocial_ar-SA.zip</download>
+    <size>216954</size>
+    <updated>2026-05-09 20:50:17</updated>
+    <progress>82</progress>
+  </language>
+  <language>
+    <code>bg-BG</code>
+    <name>Bulgarian</name>
+    <download>https://github.com/translation-creative-graphics/easysocial/releases/download/latest/com_easysocial_bg-BG.zip</download>
+    <size>136336</size>
+    <updated>2026-05-09 20:50:17</updated>
+    <progress>43</progress>
+  </language>
+  <language>
+    <code>ca-ES</code>
+    <name>Catalan</name>
+    <download>https://github.com/translation-creative-graphics/easysocial/releases/download/latest/com_easysocial_ca-ES.zip</download>
+    <size>107722</size>
+    <updated>2026-05-09 20:50:17</updated>
+    <progress>28</progress>
+  </language>
+  <language>
+    <code>zh-CN</code>
+    <name>Chinese (Simplified)</name>
+    <download>https://github.com/translation-creative-graphics/easysocial/releases/download/latest/com_easysocial_zh-CN.zip</download>
+    <size>274239</size>
+    <updated>2026-05-09 20:50:17</updated>
+    <progress>85</progress>
+  </language>
+  <language>
+    <code>hr-HR</code>
+    <name>Croatian</name>
+    <download>https://github.com/translation-creative-graphics/easysocial/releases/download/latest/com_easysocial_hr-HR.zip</download>
+    <size>102212</size>
+    <updated>2026-05-09 20:50:17</updated>
+    <progress>25</progress>
+  </language>
+  <language>
+    <code>cs-CZ</code>
+    <name>Czech</name>
+    <download>https://github.com/translation-creative-graphics/easysocial/releases/download/latest/com_easysocial_cs-CZ.zip</download>
+    <size>298301</size>
+    <updated>2026-05-09 20:50:17</updated>
+    <progress>84</progress>
+  </language>
+  <language>
+    <code>da-DK</code>
+    <name>Danish</name>
+    <download>https://github.com/translation-creative-graphics/easysocial/releases/download/latest/com_easysocial_da-DK.zip</download>
+    <size>64542</size>
+    <updated>2026-05-09 20:50:17</updated>
+    <progress>22</progress>
+  </language>
+  <language>
+    <code>nl-NL</code>
+    <name>Dutch</name>
+    <download>https://github.com/translation-creative-graphics/easysocial/releases/download/latest/com_easysocial_nl-NL.zip</download>
+    <size>393043</size>
+    <updated>2026-06-02 19:19:37</updated>
+    <progress>100</progress>
+  </language>
+  <language>
+    <code>et-EE</code>
+    <name>Estonian</name>
+    <download>https://github.com/translation-creative-graphics/easysocial/releases/download/latest/com_easysocial_et-EE.zip</download>
+    <size>24589</size>
+    <updated>2026-05-09 20:50:17</updated>
+    <progress>2</progress>
+  </language>
+  <language>
+    <code>fr-FR</code>
+    <name>French</name>
+    <download>https://github.com/translation-creative-graphics/easysocial/releases/download/latest/com_easysocial_fr-FR.zip</download>
+    <size>261880</size>
+    <updated>2026-06-02 19:19:38</updated>
+    <progress>60</progress>
+  </language>
+  <language>
+    <code>gl-ES</code>
+    <name>Galician</name>
+    <download>https://github.com/translation-creative-graphics/easysocial/releases/download/latest/com_easysocial_gl-ES.zip</download>
+    <size>176481</size>
+    <updated>2026-05-09 20:50:17</updated>
+    <progress>54</progress>
+  </language>
+  <language>
+    <code>de-DE</code>
+    <name>German</name>
+    <download>https://github.com/translation-creative-graphics/easysocial/releases/download/latest/com_easysocial_de-DE.zip</download>
+    <size>322556</size>
+    <updated>2026-05-09 20:52:03</updated>
+    <progress>81</progress>
+  </language>
+  <language>
+    <code>el-GR</code>
+    <name>Greek</name>
+    <download>https://github.com/translation-creative-graphics/easysocial/releases/download/latest/com_easysocial_el-GR.zip</download>
+    <size>375463</size>
+    <updated>2026-05-09 20:50:17</updated>
+    <progress>90</progress>
+  </language>
+  <language>
+    <code>he-IL</code>
+    <name>Hebrew</name>
+    <download>https://github.com/translation-creative-graphics/easysocial/releases/download/latest/com_easysocial_he-IL.zip</download>
+    <size>20997</size>
+    <updated>2026-05-09 20:50:17</updated>
+    <progress>0</progress>
+  </language>
+  <language>
+    <code>hu-HU</code>
+    <name>Hungarian</name>
+    <download>https://github.com/translation-creative-graphics/easysocial/releases/download/latest/com_easysocial_hu-HU.zip</download>
+    <size>280631</size>
+    <updated>2026-05-09 20:50:17</updated>
+    <progress>77</progress>
+  </language>
+  <language>
+    <code>it-IT</code>
+    <name>Italian</name>
+    <download>https://github.com/translation-creative-graphics/easysocial/releases/download/latest/com_easysocial_it-IT.zip</download>
+    <size>311561</size>
+    <updated>2026-05-09 20:50:17</updated>
+    <progress>88</progress>
+  </language>
+  <language>
+    <code>ja-JP</code>
+    <name>Japanese</name>
+    <download>https://github.com/translation-creative-graphics/easysocial/releases/download/latest/com_easysocial_ja-JP.zip</download>
+    <size>214257</size>
+    <updated>2026-05-09 20:50:17</updated>
+    <progress>81</progress>
+  </language>
+  <language>
+    <code>kk-KZ</code>
+    <name>Kazakh</name>
+    <download>https://github.com/translation-creative-graphics/easysocial/releases/download/latest/com_easysocial_kk-KZ.zip</download>
+    <size>161355</size>
+    <updated>2026-05-09 20:50:17</updated>
+    <progress>4</progress>
+  </language>
+  <language>
+    <code>nb-NO</code>
+    <name>Norwegian</name>
+    <download>https://github.com/translation-creative-graphics/easysocial/releases/download/latest/com_easysocial_nb-NO.zip</download>
+    <size>248518</size>
+    <updated>2026-05-09 20:50:17</updated>
+    <progress>79</progress>
+  </language>
+  <language>
+    <code>fa-IR</code>
+    <name>Persian</name>
+    <download>https://github.com/translation-creative-graphics/easysocial/releases/download/latest/com_easysocial_fa-IR.zip</download>
+    <size>188756</size>
+    <updated>2026-05-09 20:50:17</updated>
+    <progress>57</progress>
+  </language>
+  <language>
+    <code>pl-PL</code>
+    <name>Polish</name>
+    <download>https://github.com/translation-creative-graphics/easysocial/releases/download/latest/com_easysocial_pl-PL.zip</download>
+    <size>350943</size>
+    <updated>2026-05-09 20:50:17</updated>
+    <progress>96</progress>
+  </language>
+  <language>
+    <code>pt-PT</code>
+    <name>Portuguese</name>
+    <download>https://github.com/translation-creative-graphics/easysocial/releases/download/latest/com_easysocial_pt-PT.zip</download>
+    <size>231402</size>
+    <updated>2026-05-09 20:50:17</updated>
+    <progress>68</progress>
+  </language>
+  <language>
+    <code>pt-BR</code>
+    <name>Portuguese (Brazil)</name>
+    <download>https://github.com/translation-creative-graphics/easysocial/releases/download/latest/com_easysocial_pt-BR.zip</download>
+    <size>198400</size>
+    <updated>2026-05-09 20:50:17</updated>
+    <progress>60</progress>
+  </language>
+  <language>
+    <code>ro-RO</code>
+    <name>Romanian</name>
+    <download>https://github.com/translation-creative-graphics/easysocial/releases/download/latest/com_easysocial_ro-RO.zip</download>
+    <size>165826</size>
+    <updated>2026-05-09 20:50:17</updated>
+    <progress>61</progress>
+  </language>
+  <language>
+    <code>ru-RU</code>
+    <name>Russian</name>
+    <download>https://github.com/translation-creative-graphics/easysocial/releases/download/latest/com_easysocial_ru-RU.zip</download>
+    <size>335569</size>
+    <updated>2026-05-09 20:50:17</updated>
+    <progress>96</progress>
+  </language>
+  <language>
+    <code>sk-SK</code>
+    <name>Slovak</name>
+    <download>https://github.com/translation-creative-graphics/easysocial/releases/download/latest/com_easysocial_sk-SK.zip</download>
+    <size>167077</size>
+    <updated>2026-05-09 20:50:17</updated>
+    <progress>64</progress>
+  </language>
+  <language>
+    <code>sl-SI</code>
+    <name>Slovenian</name>
+    <download>https://github.com/translation-creative-graphics/easysocial/releases/download/latest/com_easysocial_sl-SI.zip</download>
+    <size>276071</size>
+    <updated>2026-05-09 20:50:17</updated>
+    <progress>80</progress>
+  </language>
+  <language>
+    <code>es-ES</code>
+    <name>Spanish</name>
+    <download>https://github.com/translation-creative-graphics/easysocial/releases/download/latest/com_easysocial_es-ES.zip</download>
+    <size>324476</size>
+    <updated>2026-05-09 20:50:17</updated>
+    <progress>91</progress>
+  </language>
+  <language>
+    <code>sv-SE</code>
+    <name>Swedish</name>
+    <download>https://github.com/translation-creative-graphics/easysocial/releases/download/latest/com_easysocial_sv-SE.zip</download>
+    <size>214319</size>
+    <updated>2026-05-09 20:50:17</updated>
+    <progress>70</progress>
+  </language>
+  <language>
+    <code>tr-TR</code>
+    <name>Turkish</name>
+    <download>https://github.com/translation-creative-graphics/easysocial/releases/download/latest/com_easysocial_tr-TR.zip</download>
+    <size>338896</size>
+    <updated>2026-05-09 20:50:17</updated>
+    <progress>97</progress>
+  </language>
+  <language>
+    <code>uk-UA</code>
+    <name>Ukrainian</name>
+    <download>https://github.com/translation-creative-graphics/easysocial/releases/download/latest/com_easysocial_uk-UA.zip</download>
+    <size>390338</size>
+    <updated>2026-05-09 20:50:17</updated>
+    <progress>96</progress>
+  </language>
+  <language>
+    <code>vi-VN</code>
+    <name>Vietnamese</name>
+    <download>https://github.com/translation-creative-graphics/easysocial/releases/download/latest/com_easysocial_vi-VN.zip</download>
+    <size>198886</size>
+    <updated>2026-05-09 20:50:17</updated>
+    <progress>62</progress>
+  </language>
+</languages>
