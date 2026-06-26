@@ -11,12 +11,20 @@ Each ZIP contains:
   language/{locale}/               — site .ini files (if any)
 """
 
+import re
 import zipfile
 from datetime import date
 from pathlib import Path
 from xml.etree.ElementTree import (
     Element, SubElement, ElementTree, indent
 )
+
+_EMPTY_VAL_RE = re.compile(r'^[A-Za-z][A-Za-z0-9_]*\s*=\s*(""|\'\'|)\s*$')
+
+def strip_empty_values(content: bytes) -> bytes:
+    """Remove KEY= / KEY="" lines so Joomla falls back to en-GB instead of showing blank."""
+    lines = content.decode('utf-8', errors='replace').splitlines(keepends=True)
+    return ''.join(l for l in lines if not _EMPTY_VAL_RE.match(l)).encode('utf-8')
 
 REPO       = Path(__file__).parent
 DIST       = REPO / "dist"
@@ -128,7 +136,8 @@ def build_locale(locale: str) -> bool:
         for section, filenames in sections_files.items():
             for fname in filenames:
                 src = REPO / section / locale / fname
-                zf.write(src, arcname=f"{section}/{locale}/{fname}")
+                zf.writestr(f"{section}/{locale}/{fname}",
+                            strip_empty_values(src.read_bytes()))
 
     total = sum(len(v) for v in sections_files.values())
     print(f"  {locale:8s}  {total:3d} files  →  {zip_path.name}")
