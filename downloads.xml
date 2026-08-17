@@ -6,7 +6,7 @@
     <download>https://github.com/translation-creative-graphics/easysocial/releases/download/latest/com_easysocial_sq-AL.zip</download>
     <size>115004</size>
     <updated>2026-08-17 08:39:34</updated>
-    <progress>40</progress>
+    <progress>41</progress>
   </language>
   <language>
     <code>ar-SA</code>
@@ -22,7 +22,7 @@
     <download>https://github.com/translation-creative-graphics/easysocial/releases/download/latest/com_easysocial_bg-BG.zip</download>
     <size>137689</size>
     <updated>2026-08-17 08:39:34</updated>
-    <progress>41</progress>
+    <progress>42</progress>
   </language>
   <language>
     <code>ca-ES</code>
@@ -68,8 +68,8 @@
     <code>nl-NL</code>
     <name>Dutch</name>
     <download>https://github.com/translation-creative-graphics/easysocial/releases/download/latest/com_easysocial_nl-NL.zip</download>
-    <size>410563</size>
-    <updated>2026-08-17 08:40:18</updated>
+    <size>410561</size>
+    <updated>2026-08-17 21:19:38</updated>
     <progress>100</progress>
   </language>
   <language>
@@ -86,7 +86,7 @@
     <download>https://github.com/translation-creative-graphics/easysocial/releases/download/latest/com_easysocial_fr-FR.zip</download>
     <size>281280</size>
     <updated>2026-08-17 08:40:18</updated>
-    <progress>60</progress>
+    <progress>61</progress>
   </language>
   <language>
     <code>gl-ES</code>
@@ -94,7 +94,7 @@
     <download>https://github.com/translation-creative-graphics/easysocial/releases/download/latest/com_easysocial_gl-ES.zip</download>
     <size>177771</size>
     <updated>2026-08-17 08:39:34</updated>
-    <progress>52</progress>
+    <progress>53</progress>
   </language>
   <language>
     <code>de-DE</code>
@@ -110,7 +110,7 @@
     <download>https://github.com/translation-creative-graphics/easysocial/releases/download/latest/com_easysocial_el-GR.zip</download>
     <size>183480</size>
     <updated>2026-08-17 08:39:34</updated>
-    <progress>8</progress>
+    <progress>9</progress>
   </language>
   <language>
     <code>he-IL</code>
@@ -150,7 +150,7 @@
     <download>https://github.com/translation-creative-graphics/easysocial/releases/download/latest/com_easysocial_kk-KZ.zip</download>
     <size>162651</size>
     <updated>2026-08-17 08:39:34</updated>
-    <progress>4</progress>
+    <progress>5</progress>
   </language>
   <language>
     <code>nb-NO</code>
@@ -158,7 +158,7 @@
     <download>https://github.com/translation-creative-graphics/easysocial/releases/download/latest/com_easysocial_nb-NO.zip</download>
     <size>249795</size>
     <updated>2026-08-17 08:39:34</updated>
-    <progress>76</progress>
+    <progress>77</progress>
   </language>
   <language>
     <code>fa-IR</code>
@@ -182,7 +182,7 @@
     <download>https://github.com/translation-creative-graphics/easysocial/releases/download/latest/com_easysocial_pt-PT.zip</download>
     <size>232682</size>
     <updated>2026-08-17 08:39:34</updated>
-    <progress>65</progress>
+    <progress>66</progress>
   </language>
   <language>
     <code>pt-BR</code>
@@ -238,7 +238,7 @@
     <download>https://github.com/translation-creative-graphics/easysocial/releases/download/latest/com_easysocial_sv-SE.zip</download>
     <size>215599</size>
     <updated>2026-08-17 08:39:34</updated>
-    <progress>67</progress>
+    <progress>68</progress>
   </language>
   <language>
     <code>tr-TR</code>
