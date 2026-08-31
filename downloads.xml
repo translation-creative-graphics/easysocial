@@ -20,7 +20,7 @@
     <code>bg-BG</code>
     <name>Bulgarian</name>
     <download>https://github.com/translation-creative-graphics/easysocial/releases/download/latest/com_easysocial_bg-BG.zip</download>
-    <size>148986</size>
+    <size>148987</size>
     <updated>2026-08-30 18:20:05</updated>
     <progress>44</progress>
   </language>
@@ -36,7 +36,7 @@
     <code>zh-CN</code>
     <name>Chinese (Simplified)</name>
     <download>https://github.com/translation-creative-graphics/easysocial/releases/download/latest/com_easysocial_zh-CN.zip</download>
-    <size>285224</size>
+    <size>285225</size>
     <updated>2026-08-30 18:20:05</updated>
     <progress>85</progress>
   </language>
@@ -44,7 +44,7 @@
     <code>hr-HR</code>
     <name>Croatian</name>
     <download>https://github.com/translation-creative-graphics/easysocial/releases/download/latest/com_easysocial_hr-HR.zip</download>
-    <size>113100</size>
+    <size>113101</size>
     <updated>2026-08-30 18:20:05</updated>
     <progress>27</progress>
   </language>
@@ -76,7 +76,7 @@
     <code>et-EE</code>
     <name>Estonian</name>
     <download>https://github.com/translation-creative-graphics/easysocial/releases/download/latest/com_easysocial_et-EE.zip</download>
-    <size>35327</size>
+    <size>35328</size>
     <updated>2026-08-30 18:20:05</updated>
     <progress>5</progress>
   </language>
@@ -100,8 +100,8 @@
     <code>de-DE</code>
     <name>German</name>
     <download>https://github.com/translation-creative-graphics/easysocial/releases/download/latest/com_easysocial_de-DE.zip</download>
-    <size>370250</size>
-    <updated>2026-08-30 22:21:34</updated>
+    <size>373047</size>
+    <updated>2026-08-31 10:19:46</updated>
     <progress>98</progress>
   </language>
   <language>
@@ -124,7 +124,7 @@
     <code>hu-HU</code>
     <name>Hungarian</name>
     <download>https://github.com/translation-creative-graphics/easysocial/releases/download/latest/com_easysocial_hu-HU.zip</download>
-    <size>295038</size>
+    <size>295039</size>
     <updated>2026-08-30 18:20:05</updated>
     <progress>77</progress>
   </language>
@@ -236,7 +236,7 @@
     <code>sv-SE</code>
     <name>Swedish</name>
     <download>https://github.com/translation-creative-graphics/easysocial/releases/download/latest/com_easysocial_sv-SE.zip</download>
-    <size>225048</size>
+    <size>225049</size>
     <updated>2026-08-30 18:20:05</updated>
     <progress>70</progress>
   </language>
