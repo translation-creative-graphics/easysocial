@@ -22,7 +22,7 @@
     <download>https://github.com/translation-creative-graphics/easysocial/releases/download/latest/com_easysocial_bg-BG.zip</download>
     <size>148986</size>
     <updated>2026-11-01 23:13:23</updated>
-    <progress>44</progress>
+    <progress>45</progress>
   </language>
   <language>
     <code>ca-ES</code>
@@ -36,7 +36,7 @@
     <code>zh-CN</code>
     <name>Chinese (Simplified)</name>
     <download>https://github.com/translation-creative-graphics/easysocial/releases/download/latest/com_easysocial_zh-CN.zip</download>
-    <size>285225</size>
+    <size>285224</size>
     <updated>2026-11-01 23:13:23</updated>
     <progress>85</progress>
   </language>
@@ -100,7 +100,7 @@
     <code>de-DE</code>
     <name>German</name>
     <download>https://github.com/translation-creative-graphics/easysocial/releases/download/latest/com_easysocial_de-DE.zip</download>
-    <size>392064</size>
+    <size>392063</size>
     <updated>2026-11-01 23:13:23</updated>
     <progress>100</progress>
   </language>
@@ -228,7 +228,7 @@
     <code>es-ES</code>
     <name>Spanish</name>
     <download>https://github.com/translation-creative-graphics/easysocial/releases/download/latest/com_easysocial_es-ES.zip</download>
-    <size>335491</size>
+    <size>335490</size>
     <updated>2026-11-01 23:13:23</updated>
     <progress>91</progress>
   </language>
