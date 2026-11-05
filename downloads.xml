@@ -100,8 +100,8 @@
     <code>de-DE</code>
     <name>German</name>
     <download>https://github.com/translation-creative-graphics/easysocial/releases/download/latest/com_easysocial_de-DE.zip</download>
-    <size>392079</size>
-    <updated>2026-11-04 21:22:15</updated>
+    <size>392721</size>
+    <updated>2026-11-05 22:05:16</updated>
     <progress>99</progress>
   </language>
   <language>
@@ -196,7 +196,7 @@
     <code>ro-RO</code>
     <name>Romanian</name>
     <download>https://github.com/translation-creative-graphics/easysocial/releases/download/latest/com_easysocial_ro-RO.zip</download>
-    <size>167308</size>
+    <size>167307</size>
     <updated>2026-11-02 08:50:29</updated>
     <progress>46</progress>
   </language>
@@ -236,7 +236,7 @@
     <code>sv-SE</code>
     <name>Swedish</name>
     <download>https://github.com/translation-creative-graphics/easysocial/releases/download/latest/com_easysocial_sv-SE.zip</download>
-    <size>225049</size>
+    <size>225048</size>
     <updated>2026-11-02 08:50:29</updated>
     <progress>64</progress>
   </language>
